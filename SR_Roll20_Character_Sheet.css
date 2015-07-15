@@ -1,0 +1,1204 @@
+ /* CSS Reset */{}
+ .charsheet .sheet-wrapper div, .charsheet .sheet-wrapper span, .charsheet .sheet-wrapper label,
+.charsheet .sheet-wrapper h1, .charsheet .sheet-wrapper h2, .charsheet .sheet-wrapper h3, .charsheet .sheet-wrapper h4, .charsheet .sheet-wrapper h5, .charsheet .sheet-wrapper h6, .charsheet .sheet-wrapper p,
+.charsheet .sheet-wrapper table, .charsheet .sheet-wrapper caption, .charsheet .sheet-wrapper tbody, .charsheet .sheet-wrapper tfoot, .charsheet .sheet-wrapper thead, .charsheet .sheet-wrapper tr, .charsheet .sheet-wrapper th, .charsheet .sheet-wrapper td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    color: #404040;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.charsheet .sheet-wrapper table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.charsheet .sheet-wrapper input::-webkit-outer-spin-button,
+.charsheet .sheet-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.charsheet .sheet-wrapper input[type="number"] {
+-moz-appearance: textfield;
+}
+.charsheet .sheet-wrapper textarea {
+  resize: none;
+}
+
+/* Button Reset */
+.charsheet .sheet-wrapper button[type="roll"]:before {
+    content: ""!important;
+    display: none;
+}
+.charsheet .sheet-wrapper button[type="roll"],
+.charsheet .sheet-wrapper .sheet-btn {
+    width: 100%;
+    height:24px;
+    vertical-align: middle;
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	background-color: rgba(132, 132, 132, 0.25);
+	border: 1px solid #ccc;
+	white-space: nowrap;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.charsheet .sheet-wrapper button[type="roll"]:hover,
+.charsheet .sheet-wrapper .sheet-btn:hover,
+.charsheet .sheet-wrapper .sheet-hider input[type=checkbox]:checked ~ .sheet-btn {
+	background-color: #8C001A;
+	border-color: #8C001A;
+}
+.charsheet .sheet-wrapper .sheet-hider input[type=checkbox]:checked ~ .sheet-btn {
+	
+}
+.charsheet .sheet-wrapper button[type="roll"] label,
+.charsheet .sheet-wrapper button[type="roll"] input {
+	height:24px;
+	line-height: 24px;
+	font-size: 12px;
+	vertical-align: middle;
+	text-align:center;
+	width: 99%;
+	cursor: pointer;
+	background: none;
+	box-shadow: none;
+	transition: none;
+	border-radius: none;
+    border:none;
+}
+.charsheet .sheet-wrapper button[type="roll"] input {
+}
+.charsheet .sheet-wrapper button[type="roll"]:hover label,
+.charsheet .sheet-wrapper button[type="roll"]:hover input {
+	color: white;
+    border: none;
+}
+
+/***********************
+ **   LOOK AND FEEL   **
+ ***********************/
+ /* Main Styles */
+ .charsheet {
+    background-color: #ECECEC;   
+}
+.charsheet .sheet-wrapper h3 {
+    background-color:#3F0001;
+    color:#fff;
+    padding:3px;
+    margin-bottom:5px;
+    font-size:18px;
+    font-weight:700;
+}
+.charsheet .sheet-wrapper h4 {
+    background-color:#4C3D21;
+    color:#fff;
+    padding:2px;
+    margin-bottom:3px;
+    font-size:15px;
+    font-weight:600;
+}
+.charsheet .sheet-wrapper input, .charsheet .sheet-wrapper textarea, .charsheet .sheet-wrapper select {
+    display: inline-block;
+	border: 1px solid #aaa;
+	padding: 2px;
+	height: 24px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	margin: 0;
+	color: #555;
+	background-color: white;
+	vertical-align: middle;
+	cursor: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	text-align: start;
+	
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-ms-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-writing-mode: horizontal-tb;
+}
+.charsheet .sheet-wrapper input[type="number"] {
+    background-color: #E7FFD6;
+	width: 100% !important;
+}
+.charsheet .sheet-wrapper select {
+    width: 100% !important;
+    height: 24px !important;
+    margin-bottom: 0px !important;
+}
+.charsheet .sheet-wrapper input:not([type='checkbox']) {
+    -webkit-appearance: textfield;
+}
+.charsheet .sheet-wrapper input[type="checkbox"] {
+    margin-top: 7px;
+	height: 13px;
+	width: 13px;
+	color: #555;
+	border: 1px solid #aaa;
+	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-ms-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+}
+.charsheet .sheet-wrapper input[disabled],
+.charsheet .sheet-wrapper select[disabled],
+.charsheet .sheet-wrapper textarea[disabled],
+.charsheet .sheet-wrapper input[readonly],
+.charsheet .sheet-wrapper select[readonly],
+.charsheet .sheet-wrapper textarea[readonly] {
+    background-color: rgba(132, 132, 132, 0.25);
+    border-color: #aaa;
+    cursor: not-allowed;
+}
+.charsheet .sheet-wrapper textarea {
+    width: 98%;
+    height: 90px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.charsheet .sheet-wrapper label {
+    display: inline-block;
+	width: 100%;
+	font-size: 12px;
+	text-align: left;
+	font-weight:700;
+	height: 22px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+.charsheet .sheet-wrapper .sheet-3colrow .sheet-col {
+    width: calc(33% - 3px) !important;
+	margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-3colrow .sheet-col:last-child {
+	margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-2colrow .sheet-col {
+	width: calc(50% - 3px) !important;
+	margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-2colrow .sheet-col:last-child {
+	margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-1colrow .sheet-col {
+    width: calc(100% - 3px) !important;
+    margin-right: 2px !important;
+}
+/* Special Styles */
+ .charsheet .sheet-wrapper .sheet-box {
+    padding: 5px;
+    margin-top:-5px;
+    border-top: 1px solid #8C001A;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8C001A), to(transparent));
+    background-image: -webkit-linear-gradient(#8C001A, transparent);
+    background-image:
+        -moz-linear-gradient(#8C001A, transparent),
+        -moz-linear-gradient(#8C001A, transparent)
+    ;
+    background-image:
+        -o-linear-gradient(#8C001A, transparent),
+        -o-linear-gradient(#8C001A, transparent)
+    ;
+    background-image: 
+        linear-gradient(#8C001A, transparent),
+        linear-gradient(#8C001A, transparent)
+    ;
+    -moz-background-size:1px 100%;
+    background-size:1px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+}    
+.charsheet .sheet-wrapper .sheet-transparent {
+    background:transparent;
+    border:transparent;
+}
+.charsheet .sheet-wrapper .sheet-inline {
+	display:inline-block;
+}
+/* Rows and Items */
+.charsheet .sheet-wrapper .sheet-seventyfivepercent {
+    width: calc(75% - 3px) !important;
+    margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-seventyfivepercent:last-child {
+    margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-sixtysixpercent {
+    width: calc(33% - 3px) !important;
+    margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-sixtysixypercent:last-child {
+	margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-fiftypercent {
+    display:inline-block;
+    width: calc(50% - 3px) !important;
+	margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-fiftypercent:last-child {
+    display:inline-block;    
+	margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-thirtypercent {
+    width: calc(33% - 3px) !important;
+	margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-thirtypercent:last-child {
+	margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-twentyfivepercent {
+    width: calc(25% - 3px) !important;
+    margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-twentyfivepercent:last-child {
+    margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-twentypercent {
+    width: calc(20% - 3px) !important;
+    margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-twentypercent:last-child {
+    margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-sixteenpercent {
+    width: calc(16% - 3px) !important;
+    margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-sixteenpercent:last-child {
+	margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-fivepercent {
+    width: calc(5% - 3px) !important;
+    margin-right: 2px !important;
+}
+.charsheet .sheet-wrapper .sheet-fivepercent:last-child {
+    margin-right: 0 !important;
+}
+.charsheet .sheet-wrapper .sheet-row {
+    height: 28px;
+    margin: 0 0 2px;
+}
+.charsheet .sheet-wrapper .sheet-doublerow {
+    height: 48px;
+    margin: 0 0 2px;
+}
+.charsheet .sheet-wrapper .sheet-alternative:nth-child(even) {
+    background-color: #DBB0B1;
+}
+.charsheet .sheet-wrapper .sheet-alternative:nth-child(even) input {
+    background-color: transparent;
+}
+.charsheet .sheet-wrapper .sheet-header {
+    height: 20px;
+    margin: 0;
+}
+.charsheet .sheet-wrapper .sheet-header label {
+    padding: 0;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.charsheet .sheet-wrapper .sheet-footer {
+    height: 20px;
+    margin-bottom: -5px;
+}
+.charsheet .sheet-wrapper .sheet-footer label {
+	padding: 0;
+	font-size: 10px;
+	height: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	vertical-align: super;
+}
+.charsheet .sheet-wrapper .sheet-doublefooter {
+	height: 46px;
+	margin: 0;
+}
+.charsheet .sheet-wrapper .sheet-doublefooter label {
+	padding: 0;
+	font-size: 10px;
+	height: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	vertical-align: super;
+}
+.charsheet .sheet-wrapper .sheet-item {
+	display: inline-block;
+	width: 100%;
+	height: 28px;
+	vertical-align: middle;
+	margin: 0 -2px;
+	text-align: left;
+	padding: 3px 2px;
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-center {
+	text-align: center;
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-multiline label {
+	line-height: 12px;
+	padding-top: 1px;
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-puny {
+	width: calc(10% - 3%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-little {
+	width: calc(12% - 0.5%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-tiny {
+	width: calc(15% - 2.2%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-small {
+	width: calc(20% - 0.5%);
+}
+.charsheet .sheet-wrapper textarea.sheet-small {
+	height: 32px;
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-med {
+	width: calc(30% - 0.5%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-large {
+	width: calc(40% - 4%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-big {
+	width: calc(50% - 3%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-morebig {
+	width: calc(60% - 3%);	
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-bigger {
+	width: calc(70% - 3%);
+}
+.charsheet .sheet-wrapper .sheet-item.sheet-huge {
+	width: calc(80% - 3%);
+}
+/* Drawing the Lines! */
+.charsheet .sheet-wrapper .sheet-topline label {
+    border-top: 1px solid #8C001A;
+    width: 100%;
+    margin:auto;
+	font-size:11px;
+	font-weight:bold;
+    vertical-align:super;
+    line-height:15px;
+}
+.charsheet .sheet-wrapper .sheet-footer.sheet-topline label {
+    margin-top:-10px;
+}
+.charsheet .sheet-wrapper .sheet-bottomline label {
+    border-bottom: 1px solid #8C001A;
+    width: 100%;
+    margin:auto;
+	font-size:11px;
+	font-weight:bold;    
+}
+.charsheet .sheet-wrapper .sheet-footer.sheet-bottomline label {
+    margin-bottom:-10px;
+}
+/* Baseinfo */
+.charsheet .sheet-wrapper .sheet-baseinfo {
+	display: inline-block;
+	width: 145px;
+}
+
+/***********************
+ **       TABS        **
+ ***********************/
+ /* Core Controls */
+div.sheet-tab-container {
+    position: relative;
+}
+.sheet-tab-core {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-core-radio:checked ~ .sheet-tab-core {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-core-radio:checked ~ .sheet-tab-core .sheet-tab-core {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-core-radio:checked ~ .sheet-tab-core .sheet-tab-settings {
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Skills Controls */
+.sheet-tab-skills {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-skills-radio:checked ~ .sheet-tab-skills {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-skills-radio:checked ~ .sheet-tab-skills .sheet-tab-skills {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-skills-radio:checked ~ .sheet-tab-skills .sheet-tab-settings{
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Spells Controls */
+.sheet-tab-spells {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-spells-radio:checked ~ .sheet-tab-spells {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-spells-radio:checked ~ .sheet-tab-spells .sheet-tab-spells {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-spells-radio:checked ~ .sheet-tab-spells .sheet-tab-settings{
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Matrix Controls */
+.sheet-tab-matrix {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-matrix-radio:checked ~ .sheet-tab-matrix {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-matrix-radio:checked ~ .sheet-tab-matrix .sheet-tab-matrix {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-matrix-radio:checked ~ .sheet-tab-matrix .sheet-tab-settings{
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Powers Controls */
+.sheet-tab-powers {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-powers-radio:checked ~ .sheet-tab-powers {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-powers-radio:checked ~ .sheet-tab-powers .sheet-tab-powers {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-powers-radio:checked ~ .sheet-tab-powers .sheet-tab-settings{
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Augments Controls */
+.sheet-tab-augments {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-augments-radio:checked ~ .sheet-tab-augments {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-augments-radio:checked ~ .sheet-tab-augments .sheet-tab-augments {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-augments-radio:checked ~ .sheet-tab-augments .sheet-tab-settings{
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Gear Controls */
+.sheet-tab-gear {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-gear-radio:checked ~ .sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-gear-radio:checked ~ .sheet-tab-gear .sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-gear-radio:checked ~ .sheet-tab-gear .sheet-tab-settings{
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Settings Controls */
+.sheet-tab-settings {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-settings {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-core .sheet-quality {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-core .sheet-contact {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-skills {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-spells {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-matrix {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-powers {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-augments {
+    display: none !important;
+    visibility: hidden !important;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-tab-gear {
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Quality Toggles */
+.sheet-tab-core .sheet-toggle-container-qualities .sheet-qualities-toggle ~ .sheet-quality.sheet-tab-core {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-core .sheet-toggle-container-qualities .sheet-qualities-toggle:checked ~ .sheet-quality.sheet-tab-core {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-qualities {
+    width: 20%;
+    float: left;
+}
+/* Contact Toggles */
+.sheet-tab-core .sheet-toggle-container-contacts .sheet-contacts-toggle ~ .sheet-contact.sheet-tab-core {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-core .sheet-toggle-container-contacts .sheet-contacts-toggle:checked ~ .sheet-contact.sheet-tab-core {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-contacts {
+    width: 20%;
+    float: left;
+}
+/* Skill Toggles */
+.sheet-tab-skills .sheet-toggle-container-skills .sheet-skills-toggle ~ .sheet-skill.sheet-tab-skills {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-skills .sheet-toggle-container-skills .sheet-skills-toggle:checked ~ .sheet-skill.sheet-tab-skills {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-skills {
+    width: 20%;
+    float: left;
+}
+/* Spell Toggles */
+.sheet-tab-spells .sheet-toggle-container-spells .sheet-spells-toggle ~ .sheet-spell.sheet-tab-spells {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-spells .sheet-toggle-container-spells .sheet-spells-toggle:checked ~ .sheet-spell.sheet-tab-spells {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-spells {
+    width: 20%;
+    float: left;
+}
+/* Program Toggles */
+.sheet-tab-matrix .sheet-toggle-container-matrix .sheet-matrix-toggle ~ .sheet-prog.sheet-tab-matrix {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-matrix .sheet-toggle-container-matrix .sheet-matrix-toggle:checked ~ .sheet-prog.sheet-tab-matrix {
+    display: block;
+    visibility: visible;
+}
+/* Agent Toggles */
+.sheet-tab-matrix .sheet-toggle-container-matrix .sheet-matrix-toggle ~ .sheet-agent.sheet-tab-matrix {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-matrix .sheet-toggle-container-matrix .sheet-matrix-toggle:checked ~ .sheet-agent.sheet-tab-matrix {
+    display: block;
+    visibility: visible;
+}
+/* Complex Form Toggles */
+.sheet-tab-matrix .sheet-toggle-container-matrix .sheet-matrix-toggle ~ .sheet-complexform.sheet-tab-matrix {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-matrix .sheet-toggle-container-matrix .sheet-matrix-toggle:checked ~ .sheet-complexform.sheet-tab-matrix {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-matrix {
+    width: 20%;
+    float: left;
+}
+/* Power Toggles */
+.sheet-tab-powers .sheet-toggle-container-powers .sheet-powers-toggle ~ .sheet-power.sheet-tab-powers {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-powers .sheet-toggle-container-powers .sheet-powers-toggle:checked ~ .sheet-power.sheet-tab-powers {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-powers {
+    width: 20%;
+    float: left;
+}
+/* Cyberware Toggles */
+.sheet-tab-augments .sheet-toggle-container-augments .sheet-augments-toggle ~ .sheet-cyberware.sheet-tab-augments {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-augments .sheet-toggle-container-augments .sheet-augments-toggle:checked ~ .sheet-cyberware.sheet-tab-augments {
+    display: block;
+    visibility: visible;
+}
+/* Bioware Toggles */
+.sheet-tab-augments .sheet-toggle-container-augments .sheet-augments-toggle ~ .sheet-bioware.sheet-tab-augments {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-augments .sheet-toggle-container-augments .sheet-augments-toggle:checked ~ .sheet-bioware.sheet-tab-augments {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-augments {
+    width: 20%;
+    float: left;
+}
+/* Ranged Weapon Toggles */
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle ~ .sheet-rangedweap.sheet-tab-gear {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle:checked ~ .sheet-rangedweap.sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+/* Melee Weapon Toggles */
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle ~ .sheet-meleeweap.sheet-tab-gear {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle:checked ~ .sheet-meleeweap.sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+/* Armor Toggles */
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle ~ .sheet-armor.sheet-tab-gear {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle:checked ~ .sheet-armor.sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+/* Vehicle Toggles */
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle ~ .sheet-vehicle.sheet-tab-gear {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle:checked ~ .sheet-vehicle.sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-gear {
+    width: 20%;
+    float: left;
+}
+/* Commlink Toggles */
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle ~ .sheet-commlink.sheet-tab-gear {
+    display: none;
+    visibility: hidden;
+}
+.sheet-tab-gear .sheet-toggle-container-gear .sheet-gear-toggle:checked ~ .sheet-commlink.sheet-tab-gear {
+    display: block;
+    visibility: visible;
+}
+.sheet-tab-settings-radio:checked ~ .sheet-tab-settings .sheet-toggle-container-gear {
+    width: 20%;
+    float: left;
+}
+
+/* Tab Styles */
+div.sheet-tab-container {
+    position: relative;
+}
+input.sheet-tab {
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 6px;
+    border: transparent;
+    margin: 2px 0px 5px 0px transparent;
+    padding: 2px 0px 5px 0px transparent;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+input.sheet-tab + span::before {
+    content: attr(title);
+
+    border: solid 1px #a8a8a8;
+    border-bottom-color: black;
+    text-align: center;
+    display: inline-block;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    
+    width: 100px;
+    height: 20px;
+    font-size: 18px;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 0px 5px 0px;
+    
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+input.sheet-tab:checked + span::before {
+    background: #dcdcdc;
+    background: -moz-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -webkit-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -ms-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -o-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    border-bottom-color: #fff;
+}
+input.sheet-tab2 + span::before {
+    left: 105px;
+}
+input.sheet-tab3 + span::before {
+    left: 205px;
+}
+input.sheet-tab4 + span::before {
+    left: 305px;
+}
+input.sheet-tab5 + span::before {
+    left: 405px;
+}
+input.sheet-tab6 + span::before {
+    left: 505px;
+}
+input.sheet-tab7 + span::before {
+    left: 605px;
+}
+input.sheet-tab8 + span::before {
+    left: 705px;
+}
+input.sheet-tab:not(:first-child)::before {
+    border-left: none;
+}
+div.sheet-tab-content {
+    border: 1px solid #a8a8a8;
+    border-top-color: #000;
+    margin: 2px 0 0 5px;
+    padding: 5px;
+}
+
+/* Skill Styles */
+
+
+/***********************
+ **  ROLL TEMPLATES   **
+ ***********************/
+ /* Table Reset */
+ table {
+     border: 0;
+     border-spacing: 0;
+     border-radius: 0;
+     -moz-border-radius: 0;
+     background-color: none;
+ }
+ 
+/* Ranged Attacks */
+.sheet-rolltemplate-rangedattack table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #440000;
+}
+.sheet-rolltemplate-rangedattack thead tr {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.sheet-rolltemplate-rangedattack thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-rangedattack thead tr:last-child th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-rangedattack tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-rangedattack td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-rangedattack tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-rangedattack tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-rangedattack tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+/* Melee Attacks */
+.sheet-rolltemplate-meleeattack table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #FCF400;
+}
+.sheet-rolltemplate-meleeattack thead tr {
+    color: #000000;
+    font-size: 16px;
+}
+.sheet-rolltemplate-meleeattack thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-meleeattack thead tr:last-child th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-meleeattack tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-meleeattack td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-meleeattack tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-meleeattack tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-meleeattack tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+/* Spell */
+.sheet-rolltemplate-spell table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #7B0089;
+}
+.sheet-rolltemplate-spell thead tr {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.sheet-rolltemplate-spell thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-spell thead tr:last-child th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-spell tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-spell td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-spell tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-spell tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-spell tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+/* Complex Form & Matrix*/
+.sheet-rolltemplate-complexform table,
+.sheet-rolltemplate-matrix table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #4C7500;
+}
+.sheet-rolltemplate-complexform thead tr,
+.sheet-rolltemplate-matrix thead tr {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.sheet-rolltemplate-complexform thead tr:first-child th,
+.sheet-rolltemplate-matrix thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-complexform thead tr:last-child th,
+.sheet-rolltemplate-matrix thead tr:last-child th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-complexform tbody tr td,
+.sheet-rolltemplate-matrix tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-complexform td span.sheet-tcat,
+.sheet-rolltemplate-matrix td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-complexform tbody tr:last-child td,
+.sheet-rolltemplate-matrix tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-complexform tbody tr:nth-child(even),
+.sheet-rolltemplate-matrix tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-complexform tbody tr:nth-child(odd),
+.sheet-rolltemplate-matrix tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+/* Power */
+.sheet-rolltemplate-power table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #004400;
+}
+.sheet-rolltemplate-power thead tr {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.sheet-rolltemplate-power thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-power thead tr:last-child th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-power tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-power td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-power tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-power tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-power tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+/* General */
+.sheet-rolltemplate-general table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #444444;
+}
+.sheet-rolltemplate-general thead tr {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.sheet-rolltemplate-general thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-general thead tr.sheet-subheader th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-general tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-general td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-general tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-general tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-general tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+/* Initiative */
+.sheet-rolltemplate-initiative table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    -moz-boarder-radius: 10px;
+    font-family: helvetica;
+    background-color: #444444;
+}
+.sheet-rolltemplate-initiative thead tr {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.sheet-rolltemplate-initiative thead tr:first-child th {
+    padding-top: 2px;
+}
+.sheet-rolltemplate-initiative thead tr.sheet-subheader th {
+    font-size: 11px;
+}
+.sheet-rolltemplate-initiative tbody tr td {
+    padding: 2px 5px;
+}
+.sheet-rolltemplate-initiative td span.sheet-tcat {
+    font-weight: bold;
+}
+.sheet-rolltemplate-initiative tbody tr:last-child td {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+}
+.sheet-rolltemplate-initiative tbody tr:nth-child(even) {
+    background: #CEC7B6;
+}
+.sheet-rolltemplate-initiative tbody tr:nth-child(odd) {
+    background: #B6AB91;
+}
+
+
+.sheet-expand textarea {
+    position: relative;
+    height: 18px;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sheet-expand textarea:focus {
+    position: absolute;
+    z-index: 10;
+   height: 4em;
+   -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sheet-contact-expand textarea:focus {
+    height: 16em;
+}
+textarea.sheet-notebox {
+   resize: vertical;
+}
+label.sheet-multiline {
+    display: block;
+    float: right;
+    font-size: 10px;
+}
+label.sheet-multiline span {
+    position: relative;
+    top: -10px
+}
+label.sheet-multiline:first-child {
+    top: -4px;
+    position: relative;
+}
